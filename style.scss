@@ -9,6 +9,7 @@ html {
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,6 +25,7 @@ body {
 .h1 {
     display: inline-block;
     padding: $baseUnit*4 $baseUnit*3;
+    margin-top: $baseUnit * 5;
     margin-bottom: $baseUnit * 2;
     font-family: 'Montserrat Alternates', sans-serif;
     font-size: $baseFontSize * 2;
@@ -35,6 +37,10 @@ body {
 .h2 {
     margin-bottom: $baseUnit * 4;
     font-size: $baseFontSize;
+}
+
+.content {
+    margin-bottom: $baseUnit * 10;
 }
 
 .link {
