@@ -1,5 +1,94 @@
-$someColor: #bada55;
+$baseBlack: #212127;
+$baseUnit: 8px;
+$baseFontSize: 20px;
+
+* { padding: 0; margin: 0; box-sizing: border-box; }
+
+html {
+    height: 100%;
+}
 
 body {
-    background: $someColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: $baseFontSize;
+    font-weight: 500;
+    background: white;
+    color: $baseBlack;
+}
+
+.h1 {
+    display: inline-block;
+    padding: $baseUnit*4 $baseUnit*3;
+    margin-bottom: $baseUnit * 4;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: $baseFontSize * 2;
+    font-weight: 900;
+    color: white;
+    background: $baseBlack;
+}
+
+.h2 {
+    margin-bottom: $baseUnit * 4;
+    font-size: $baseFontSize;
+}
+
+.link {
+    position: relative;
+    display: inline-block;
+    padding: $baseUnit*2 $baseUnit*3 $baseUnit*2 $baseUnit*2;
+    color: white;
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 200ms ease-in;
+
+    &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        top: $baseUnit;
+        right: $baseUnit;
+        bottom: $baseUnit;
+        left: 0;
+        z-index: -1;
+        transform-origin: bottom;
+        transform: skewX(-10deg) scaleY(1);
+        transition: transform 200ms ease-in;
+    }
+
+    &:hover, &:focus {
+        color: $baseBlack;
+
+        &::after {
+            transform: skewX(-10deg) scaleY(0.05);
+        }
+    }
+
+    &-instagram::after { background: #405de6; }
+    &-codepen::after { background: #0ebeff; }
+    &-github::after { background: #333; }
+    &-xing::after { background: #026466; }
+    &-linkedin::after { background: #0077b5; }
+    &-mail::after { background: #ea4335; }
+}
+
+.footer {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    bottom: 0;
+    padding: $baseUnit * 2;
+    background: $baseBlack;
+    font-size: 12px;
+    color: white;
+}
+
+.footer-link {
+
 }
