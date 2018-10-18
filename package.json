@@ -1,0 +1,13 @@
+{
+  "name": "karsten-buckstegge",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Karsten Buckstegge <k.buckstegge@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "scripts": {
+    "styles": "node-sass style.scss style.css"
+  }
+}
