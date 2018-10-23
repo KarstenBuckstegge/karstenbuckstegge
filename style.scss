@@ -20,6 +20,10 @@ body {
     font-weight: 500;
     background: white;
     color: $baseBlack;
+
+    @media only screen and (max-width: 768px) {
+        text-align: center;
+    }
 }
 
 .h1 {
@@ -32,6 +36,10 @@ body {
     font-weight: 900;
     color: white;
     background: $baseBlack;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 0;
+    }
 }
 
 .h2 {

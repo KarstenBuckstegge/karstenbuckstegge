@@ -18,6 +18,9 @@ body {
   font-weight: 500;
   background: white;
   color: #212127; }
+  @media only screen and (max-width: 768px) {
+    body {
+      text-align: center; } }
 
 .h1 {
   display: inline-block;
@@ -29,6 +32,9 @@ body {
   font-weight: 900;
   color: white;
   background: #212127; }
+  @media only screen and (max-width: 768px) {
+    .h1 {
+      margin-top: 0; } }
 
 .h2 {
   margin-bottom: 32px;
