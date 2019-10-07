@@ -69,6 +69,8 @@ body {
       transform: scaleY(0.05); }
   .link-instagram::after {
     background: #405de6; }
+  .link-behance::after {
+    background: #1769ff; }
   .link-codepen::after {
     background: #0ebeff; }
   .link-github::after {
